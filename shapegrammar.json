@@ -1,0 +1,71 @@
+{
+    "furniture_placement_rules": {
+      "general_rules": {
+        "accessibility": "Furniture should not obstruct movement and should allow easy access to doors and windows.",
+        "visual_center": "Key furniture pieces should be positioned at the visual center or as focal points within the room.",
+        "space_optimization": "Utilize wall space for larger items to maximize open areas.",
+        "lighting_consideration": "Position furniture to take advantage of natural light from windows and to avoid blocking light sources."
+      },
+      "furniture_specific_rules": {
+        "sofa": {
+          "placement": [
+            "Against a wall for space efficiency",
+            "In the center to divide open spaces",
+            "Facing a focal point such as a TV or fireplace"
+          ],
+          "alignment": "Parallel or perpendicular to the longest wall",
+          "distance_from_wall": "At least 30 cm for ventilation"
+        },
+        "bed": {
+          "placement": [
+            "Headboard against a wall",
+            "Avoid alignment directly with doors",
+            "Near windows if natural light is preferred"
+          ],
+          "distance_from_window": "At least 50 cm to avoid direct drafts",
+          "orientation": "Perpendicular to the longest wall for stability"
+        },
+        "desk": {
+          "placement": [
+            "Near a window for natural lighting",
+            "Against a wall to save space",
+            "Facing the entrance for a commanding position"
+          ],
+          "alignment": "Parallel to the window or perpendicular for side lighting"
+        },
+        "dining_table": {
+          "placement": [
+            "Near the kitchen for easy access",
+            "Close to natural light sources for ambiance",
+            "Centered within the dining area"
+          ],
+          "distance_between_chairs": "At least 60 cm for comfort"
+        },
+        "chair": {
+          "placement": [
+            "Adjacent to a primary furniture piece like a sofa or table",
+            "Positioned to maintain conversational distance",
+            "Facing focal points in social spaces"
+          ],
+          "clearance_around": "At least 50 cm for movement"
+        },
+        "storage_unit": {
+          "placement": [
+            "Against walls to save space",
+            "Near entry points for convenience",
+            "Away from windows to avoid blocking light"
+          ],
+          "height_consideration": "Low units under windows, tall units against solid walls"
+        }
+      },
+      "modular_furniture": {
+        "placement": [
+          "Flexible arrangement to adapt to different layouts",
+          "Used as dividers in open spaces",
+          "Stackable or expandable to optimize space usage"
+        ],
+        "configuration": "Rearrange based on user preference and room function"
+      }
+    }
+  }
+  
