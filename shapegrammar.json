@@ -8,48 +8,27 @@
       "max_width": 7.0,
       "max_depth": 12.0
     },
-  "furniture_clusters": {
-    "living_group": ["sofa", "coffee_table", "rug", "lamp"],
-    "bedside_group": ["bed", "nightstand", "lamp"]
-    },
-  "placement_patterns": {
-    "living_group": "Arrange in L-shape or U-shape near wall or window",
-    "bedside_group": "Place in corner or against wall, away from entrance"
-    },
-  "cozy_tips": [
-    "Keep main seating area compact and inviting",
-    "Use lamps near seating and sleeping areas",
-    "Prefer warm-toned wall and floor materials",
-    "Add small decor items like plants or cushions"
-  ],
-    "functional_zones": {
-      "bed_zone": "Place bed at one end or corner, away from direct view of entrance.",
-      "work_zone": "Place desk near window for natural light.",
-      "living_zone": "Cluster sofa, coffee table, rug in center or near window/TV.",
-      "storage_zone": "Place storage units along walls, near entrance or unused corners."
-    },
+    "entrance_position": "short_wall_center",
+    "window_position": "opposite_wall_center",
     "circulation": {
-      "entrance_to_bed": "Maintain at least 60cm clear path from entrance to bed.",
-      "entrance_to_kitchen": "Maintain at least 60cm clear path from entrance to kitchen.",
-      "min_circulation_width": 0.6,
-      "no_furniture_in_path": true
+      "main_paths": [
+        ["entrance", "bed"],
+        ["entrance", "desk"],
+        ["entrance", "kitchen"]
+      ],
+      "min_circulation_width": 0.6
     },
-    "privacy": {
-      "bed_not_in_direct_view": true,
-      "use_furniture_as_partition": "Bookshelf, sofa, or partition can be used to separate bed from living area."
+    "clusters": {
+      "living_group": ["sofa", "coffee_table", "rug", "lamp"],
+      "bedside_group": ["bed", "nightstand", "lamp"]
     },
-    "window_rules": {
-      "desk_near_window": true,
-      "no_storage_blocking_window": true,
-      "bed_head_away_from_window": 0.5
+    "placement_patterns": {
+      "living_group": "Arrange in U-shape or L-shape near window or wall, close together",
+      "bedside_group": "Place in corner or against wall, away from entrance"
     },
-    "spacing": {
-      "min_between_furniture": 0.5
-    },
-    "furniture_type_priority": {
-      "prefer_modular": true,
-      "allow_sofa_bed": true,
-      "allow_folding_table": true
+    "furniture_spacing": {
+      "min_between_furniture": 0.4,
+      "min_between_cluster": 0.6
     },
     "visual_center": {
       "main_furniture_faces": ["window", "tv"]
