@@ -8,6 +8,20 @@
       "max_width": 7.0,
       "max_depth": 12.0
     },
+  "furniture_clusters": {
+    "living_group": ["sofa", "coffee_table", "rug", "lamp"],
+    "bedside_group": ["bed", "nightstand", "lamp"]
+    },
+  "placement_patterns": {
+    "living_group": "Arrange in L-shape or U-shape near wall or window",
+    "bedside_group": "Place in corner or against wall, away from entrance"
+    },
+  "cozy_tips": [
+    "Keep main seating area compact and inviting",
+    "Use lamps near seating and sleeping areas",
+    "Prefer warm-toned wall and floor materials",
+    "Add small decor items like plants or cushions"
+  ],
     "functional_zones": {
       "bed_zone": "Place bed at one end or corner, away from direct view of entrance.",
       "work_zone": "Place desk near window for natural light.",
