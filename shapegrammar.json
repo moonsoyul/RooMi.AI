@@ -1,71 +1,114 @@
 {
-    "furniture_placement_rules": {
-      "general_rules": {
-        "accessibility": "Furniture should not obstruct movement and should allow easy access to doors and windows.",
-        "visual_center": "Key furniture pieces should be positioned at the visual center or as focal points within the room.",
-        "space_optimization": "Utilize wall space for larger items to maximize open areas.",
-        "lighting_consideration": "Position furniture to take advantage of natural light from windows and to avoid blocking light sources."
-      },
-      "furniture_specific_rules": {
-        "sofa": {
-          "placement": [
-            "Against a wall for space efficiency",
-            "In the center to divide open spaces",
-            "Facing a focal point such as a TV or fireplace"
-          ],
-          "alignment": "Parallel or perpendicular to the longest wall",
-          "distance_from_wall": "At least 30 cm for ventilation"
-        },
-        "bed": {
-          "placement": [
-            "Headboard against a wall",
-            "Avoid alignment directly with doors",
-            "Near windows if natural light is preferred"
-          ],
-          "distance_from_window": "At least 50 cm to avoid direct drafts",
-          "orientation": "Perpendicular to the longest wall for stability"
-        },
-        "desk": {
-          "placement": [
-            "Near a window for natural lighting",
-            "Against a wall to save space",
-            "Facing the entrance for a commanding position"
-          ],
-          "alignment": "Parallel to the window or perpendicular for side lighting"
-        },
-        "dining_table": {
-          "placement": [
-            "Near the kitchen for easy access",
-            "Close to natural light sources for ambiance",
-            "Centered within the dining area"
-          ],
-          "distance_between_chairs": "At least 60 cm for comfort"
-        },
-        "chair": {
-          "placement": [
-            "Adjacent to a primary furniture piece like a sofa or table",
-            "Positioned to maintain conversational distance",
-            "Facing focal points in social spaces"
-          ],
-          "clearance_around": "At least 50 cm for movement"
-        },
-        "storage_unit": {
-          "placement": [
-            "Against walls to save space",
-            "Near entry points for convenience",
-            "Away from windows to avoid blocking light"
-          ],
-          "height_consideration": "Low units under windows, tall units against solid walls"
-        }
-      },
-      "modular_furniture": {
-        "placement": [
-          "Flexible arrangement to adapt to different layouts",
-          "Used as dividers in open spaces",
-          "Stackable or expandable to optimize space usage"
-        ],
-        "configuration": "Rearrange based on user preference and room function"
-      }
+  "room_type": "studio",
+  "room_shape": "rectangle",
+  "room_rules": {
+    "dimensions": {
+      "min_width": 2.5,
+      "min_depth": 4.0,
+      "max_width": 7.0,
+      "max_depth": 12.0
+    },
+    "functional_zones": {
+      "bed_zone": "Place bed at one end or corner, away from direct view of entrance.",
+      "work_zone": "Place desk near window for natural light.",
+      "living_zone": "Cluster sofa, coffee table, rug in center or near window/TV.",
+      "storage_zone": "Place storage units along walls, near entrance or unused corners."
+    },
+    "circulation": {
+      "entrance_to_bed": "Maintain at least 60cm clear path from entrance to bed.",
+      "entrance_to_kitchen": "Maintain at least 60cm clear path from entrance to kitchen.",
+      "min_circulation_width": 0.6,
+      "no_furniture_in_path": true
+    },
+    "privacy": {
+      "bed_not_in_direct_view": true,
+      "use_furniture_as_partition": "Bookshelf, sofa, or partition can be used to separate bed from living area."
+    },
+    "window_rules": {
+      "desk_near_window": true,
+      "no_storage_blocking_window": true,
+      "bed_head_away_from_window": 0.5
+    },
+    "spacing": {
+      "min_between_furniture": 0.5
+    },
+    "furniture_type_priority": {
+      "prefer_modular": true,
+      "allow_sofa_bed": true,
+      "allow_folding_table": true
+    },
+    "visual_center": {
+      "main_furniture_faces": ["window", "tv"]
+    },
+    "forbidden": {
+      "no_overlap": true,
+      "no_blocked_door": true,
+      "no_blocked_window": true,
+      "no_blocked_circulation": true
+    }
+  },
+  "furniture_rules": {
+    "sofa": {
+      "placement": [
+        "Cluster with coffee table and rug in living zone",
+        "Face window or TV if possible"
+      ],
+      "distance_from_wall": 0.3,
+      "adjacency": ["coffee_table", "rug"]
+    },
+    "bed": {
+      "placement": [
+        "Place at end or corner of room, not in direct view of entrance",
+        "Keep headboard against wall"
+      ],
+      "distance_from_window": 0.5,
+      "adjacency": ["nightstand", "lamp"]
+    },
+    "desk": {
+      "placement": [
+        "Place near window for natural light",
+        "Do not block circulation"
+      ]
+    },
+    "dining_table": {
+      "placement": [
+        "If present, place near kitchen zone or window"
+      ],
+      "min_distance_from_wall": 0.3
+    },
+    "chair": {
+      "placement": [
+        "With desk or dining table",
+        "Maintain at least 50cm clearance around"
+      ]
+    },
+    "storage_unit": {
+      "placement": [
+        "Along walls, near entrance or unused corners",
+        "Low units under window, tall units against solid wall"
+      ]
+    },
+    "bookshelf": {
+      "placement": [
+        "Against wall, can be used as partition for privacy"
+      ]
+    },
+    "modular_furniture": {
+      "placement": [
+        "Prefer multifunctional items (sofa-bed, folding table, etc)",
+        "Use as divider if needed"
+      ]
+    },
+    "rug": {
+      "placement": [
+        "Under coffee table and sofa cluster"
+      ],
+      "clearance_from_wall": 0.2
+    },
+    "lamp": {
+      "placement": [
+        "Near bed, desk, or sofa for task lighting"
+      ]
     }
   }
-  
+}
